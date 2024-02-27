@@ -1,3 +1,2 @@
-require("summers.set")
-require("summers.remap")
+require("summers.core")
 require("summers.lazy")
