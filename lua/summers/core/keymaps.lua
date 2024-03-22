@@ -3,11 +3,12 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
 
+
 ---------------------
 -- General Keymaps -------------------
 
 -- use jk to exit insert mode
-keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+--keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
@@ -56,3 +57,9 @@ vim.keymap.set("n", "<C-t>", vim.cmd.Ex)
 -- vim.keymap.set("n", "<leader>s", [[:%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>]])
 --vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 --vim.keymap.set("n", "<C-1>", vim.cmd.Ex)
+
+--local builtin = require('telescope.builtin')
+
+--vim.keymap.set('n', '<C-o>', builtin.find_files, {})
+--vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+
